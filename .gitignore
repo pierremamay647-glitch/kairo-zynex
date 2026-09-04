@@ -1,0 +1,8 @@
+node_modules/
+sessions/
+sessions.json
+config.json
+auth_info_baileys/
+tmp/
+.env
+*.log
