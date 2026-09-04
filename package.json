@@ -1,0 +1,41 @@
+{
+  "name": "kairo-zynex",
+  "version": "5.5.0",
+  "description": "KAIRO ZYNEX multi-device WhatsApp bot with stable command routing, 10 new commands and upgraded pairing website.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "restart": "rm -r auth_info_baileys || node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Danscot/senku-xmd.git"
+  },
+  "keywords": [
+    "senku",
+    "Danscot",
+    "bug",
+    "bot",
+    "bailey",
+    "whatsapp"
+  ],
+  "author": "Danscot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Danscot/senku-xmd/issues"
+  },
+  "homepage": "https://github.com/Danscot/senku-xmd#readme",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "baileys": "^7.0.0-rc.9",
+    "jimp": "^0.22.12",
+    "node-fetch": "^3.3.2",
+    "uuid": "^11.1.0",
+    "wa-sticker-formatter": "^4.4.4",
+    "yt-search": "^2.13.1"
+  },
+  "devDependencies": {
+    "ts-jest": "^29.1.1"
+  }
+}
