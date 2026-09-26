@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { jidNormalizedUser } from 'baileys';
+import { jidNormalizedUser } from '@whiskeysockets/baileys';
 
 const DATA_DIR = path.join(process.cwd(), 'data');
 const DATA_PATH = path.join(DATA_DIR, 'welcome.json');
