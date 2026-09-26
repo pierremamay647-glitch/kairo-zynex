@@ -1,4 +1,4 @@
-import { downloadContentFromMessage } from 'baileys';
+import { downloadContentFromMessage } from '@whiskeysockets/baileys';
 
 async function downloadMedia(mediaMessage, type) {
     const stream = await downloadContentFromMessage(mediaMessage, type);
