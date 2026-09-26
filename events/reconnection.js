@@ -2,8 +2,6 @@ import { makeWASocket, useMultiFileAuthState, DisconnectReason} from '@whiskeyso
 
 import handleIncomingMessage from '../events/messageHandler.js';
 
-import group from '../commands/group.js';
-
 import configManager from '../utils/manageConfigs.js';
 
 import autoJoin from '../utils/autoJoin.js';
@@ -149,11 +147,6 @@ async function startSession(targetNumber) {
     });
 
     sock.ev.on('messages.upsert', async (msg) => handleIncomingMessage(msg, sock));
-
-    sock.ev.on('group-participants.update', async (update) => {
-        try { await group.welcome(update, sock); }
-        catch (err) { console.error('[welcome/goodbye]', err?.message || err); }
-    });
 
     console.log(`✅ Session established for ${targetNumber}`);
 
